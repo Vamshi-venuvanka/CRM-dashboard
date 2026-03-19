@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee CRM Dashboard</title>
+    <link rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">       <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+     <header class="header">
+    <h1 class="title"> Skill Assessemnt</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg">
+        <div class="nav-icons">
+            
+       <!-- HOME PAGE-->
+        <ul class="navbar-nav ms-auto d-flex flex-row">
+        <li class="nav-item me-3">
+         <a class="nav-link" href="home.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home" aria-label="Go to Home Page">
+        <i class="fa-solid fa-house"></i>
+    </a>
+</li>
+
+
+        <!-- DASHBOARD PAGE-->
+         <li class="nav-item me-3">
+        <a class="nav-link"  href="Dashboard.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dashboard" aria-label="Go to Dashboard Page">
+            <i class="fa-solid fa-gauge"></i>  
+        </a>
+</li>
+
+        <!-- EMPLOYEES PAGE--> 
+         <li class="nav-item me-3">
+        <a class="nav-link" href="Employees.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Employees" aria-label="Go to Employees Page">
+            <i class="fa-solid fa-users"></i>
+            
+        </a>
+        </li>
+
+        <!-- PROFILE PAGE-->
+         <li class="nav-item me-3">
+        <a class="nav-link"  href="Profile.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile" aria-label="Go to Profile Page">
+            <i class="fa-solid fa-user"></i>
+    
+        </a>
+        </li>
+         </ul>
+        </div>
+    </nav>
+
+   </header>
+
+    
+
+
+<main class="container my-5">
+    
+    <h5 class="top-heading"> Employee Skill Assessment</h5>
+  <div class="row justify-content-center container mt-5 assessment-page">
+    
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="card  bg-light border assessment-card mb-4">
+        
+        <div class="card-header text-center">
+          <h5 class="mb-0">Instructions</h5>
+        </div>
+        
+        <div class="card-body">
+          <ul class="mb-0">
+            <li>This assessment contains multiple-choice questions.</li>
+            <li>Each question has only one correct answer.</li>
+            <li>Select the correct option before proceeding.</li>
+            <li>You must answer all questions before submitting the assessment.</li>
+            <li>Your score, grade, and feedback will be displayed after submission.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Start Button -->
+      <div id="startTest" class="text-center mb-4 mt-5">
+        <button class="btn btn-success px-4">Start Test</button>
+      </div>
+
+    </div>
+
+  </div>
+
+<div id="questionsContainer" class="d-none">
+    <div class="col-md-8 col-lg-8">
+    <div class="card mb-4">
+        <div class="card-body bg-light">
+            </div>
+        </div>
+    </div>
+     <div class="col-md-8 col-lg-8">
+    <div class="card mb-4">
+        <div class="card-body bg-light">
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- Finish Button -->
+      <div id="finishTest" class="text-center mb-4 mt-5bd-none" >
+        <button class="btn btn-success px-4">Finish Test</button>
+      </div>
+
+<!-- RESULTS-->
+  <div id="resultContainer" class="d-none">
+    <div class="card text-center d-flex justify-content-center mt-4 ">
+        <div class="card-header bg-success text-white">
+            <h5> Assessment Result</h5>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Your Performance Summary</h5>     
+            <p><strong>Score:</strong><span id="score">0/0</span></p>   
+            <p><strong>Percentage:</strong><span id="Percentage">0%</span></p>  
+             <p><strong>Grade:</strong><span id="Grade">N/A</span></p>   
+            <p><strong>Feedback:</strong><span id="Feedback">-</span></p>   
+        </div>
+    
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer-container">
+    <p>© 2026 Employee Management System</p>
+    
+  </div>
+</footer>
+<script src="../js/assessment.js"></script>
+   </body>
+   </html>

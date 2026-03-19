@@ -1,0 +1,108 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee CRM Dashboard</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+body{
+    background-color: #EFF6FF;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+
+.title{
+    font-size: 25px;
+    background-color: cadetblue;
+    font-family:sans-serif;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+.CRM{
+    color:wheat
+}
+.sidebar-background{
+    width: 100px;
+    background-color: cadetblue;
+    position: fixed;
+    left:0;
+    top:10px;
+    bottom: 0;
+    height: calc(100vh-110px);
+}
+.navigation-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 80vh;
+    flex-direction: column;
+
+}
+.cards{
+
+display:flex;
+align-items:center;   /* vertically aligns icon and text */
+gap:10px;             /* space between icon and title */
+text-decoration:none;
+padding:15px 25px;
+background:white;
+border-radius:8px;
+color:black;
+font-size:18px;
+}
+.cards i{
+    font-size: 15px;
+}
+.cards:hover{
+    background-color: #EFF6FF;
+    color: black;
+}
+</style>
+
+<body>
+    
+   <h1 class="title"> 
+    <span class="Employee">Employee </span>
+     <span class="CRM">CRM System </span>
+   </h1>
+
+    <div class="sidebar-background"></div>
+    <div class="navigation-links">
+    
+    <a href="Dashboard.html" class="cards"> 
+    <i class="fa-solid fa-chart-line"></i>
+           <span>Dashboard</span>
+     </a>
+
+
+    <a href="Employees.html" class="cards"> 
+    <i class="fa-solid fa-users"></i>
+           <span>Employees</span>
+     </a>
+    <a href="Assessment.html" class="cards"> 
+    <i class="fa-solid fa-clipboard-check"></i>
+           <span>Assessment</span>
+     </a>
+    <a href="Profile.html" class="cards"> 
+    <i class="fa-solid fa-user"></i>
+           <span>Profile</span>
+     </a>
+    </div>
+
+
+
+</body>

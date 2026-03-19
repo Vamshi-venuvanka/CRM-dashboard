@@ -1,0 +1,15 @@
+{
+  "name": "employee-crm-project",
+  "version": "1.0.0",
+  "description": "Employee CRM frontend project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee CRM Dashboard</title>
+    <link rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+     <header class="header">
+    <h1 class="title"> Employee Management</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg">
+        <div class="nav-icons">
+            
+       <!-- HOME PAGE-->
+        <ul class="navbar-nav ms-auto d-flex flex-row">
+        <li class="nav-item me-3">
+         <a class="nav-link" href="home.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home" aria-label="Go to Home Page">
+        <i class="fa-solid fa-house"></i>
+    </a>
+</li>
+
+
+        <!-- DASHBOARD PAGE-->
+         <li class="nav-item me-3">
+        <a class="nav-link"  href="dashboard.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dashboard" aria-label="Go to Employees Page">
+            <i class="fa-solid fa-gauge"></i>  
+        </a>
+</li>
+
+        <!-- ASSESSMENT PAGE--> 
+         <li class="nav-item me-3">
+        <a class="nav-link" href="Assessment.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Assessment" aria-label="Go to Assessment Page">
+            <i class="fa-solid fa-chart-line"></i>
+            
+        </a>
+        </li>
+
+        <!-- PROFILE PAGE-->
+         <li class="nav-item me-3">
+        <a class="nav-link"  href="Profile.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile" aria-label="Go to Profile Page">
+            <i class="fa-solid fa-user"></i>
+    
+        </a>
+        </li>
+         </ul>
+        </div>
+    </nav>
+
+   </header>
+
+
+<div class="container mt-3 align-items-center">
+
+  <!-- Top Row -->
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h4>Employee List</h4>
+
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
+      Add Employee
+    </button>
+  </div>
+
+  <!-- Search Row -->
+  <div class="row justify-content-center mb-3">
+
+    <div class="col-md-5 align-items-center">
+      <input type="text" id="searchName" placeholder="Search by Name" class="form-control">
+    </div>
+
+    <div class="col-md-4 align-items-center" >
+      <select id="searchDept" class="form-control">
+        <option value="">All Departments</option>
+        <option>Sales</option>
+        <option>Marketing</option>
+        <option>HR</option>
+        <option>IT</option>
+      </select>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- ✅ Modal (Fixed Properly) -->
+<div class="modal fade" id="addEmployeeModal">
+  <div class="modal-dialog">
+    <div class="modal-content p-3">
+
+      <h5>Add Employee</h5>
+
+      <input type="text" id="empName" placeholder="Enter Name" class="form-control mb-2">
+
+      <select id="empDept" class="form-control mb-2">
+        <option value="">Select Department</option>
+        <option>Sales</option>
+        <option>Marketing</option>
+        <option>HR</option>
+        <option>IT</option>
+      </select>
+
+      <input type="number" id="empClients" placeholder="No. of Clients" class="form-control mb-2">
+
+      <button class="btn btn-primary" id="saveEmployee">Save</button>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<section class="employee-section">
+    <div class="employee-card">
+   <table class="table table-bordered">
+    <thead>
+        <tr>
+        <th> ID</th>
+        <th> Name</th>
+        <th> Department</th>
+        <th> Role</th>
+        <th>Clients</th>
+        <th>status</th>
+        <th> Action</th>
+        </tr>
+    </thead>
+    <tbody id="employeeTable">
+    <!-- <tr>
+        <td>101</td>
+        <td>Rahul Sharma</td>
+        <td>Sales</td>
+        <td>Manager</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>102</td>
+        <td>Ananya</td>
+        <td>Marketing</td>
+        <td>Executive</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>103</td>
+        <td>Rohith Sharma</td>
+        <td>HR</td>
+        <td>Officer</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>104</td>
+        <td>Priya</td>
+        <td>IT</td>
+        <td>Developer</td>
+        <td>1</td>
+    </tr> -->
+    </tbody>
+   </table>
+</div>
+   </section>
+<main>
+
+</main>
+   <footer class="footer">
+  <div class="footer-container">
+    <p>© 2026 Employee Management System</p>
+    
+  </div>
+</footer>
+<script src="../js/employee.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

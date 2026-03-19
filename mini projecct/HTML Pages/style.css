@@ -1,0 +1,228 @@
+body{
+    background-color: #EFF6FF;
+    padding: 0;
+    margin:0;
+    width: 100%;
+   
+}
+.sections{
+    max-width: 1100px;
+    margin: auto;
+}
+.main-content{
+    flex:1;
+}
+.header{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    width:100%;
+}
+header h1{
+    color: black;
+    font-size: 20px;
+    font-family:sans-serif;
+    text-align:justify;
+    font-weight: bold;
+    margin: 10px;
+}
+.nav-link i{
+    color: darkblue;
+    font-size: 20px;
+}
+.nav-icons{
+display:flex;
+gap:30px;
+}
+
+.nav-icons i{
+font-size:22px;
+color:darkblue;
+cursor:pointer;
+}
+.heading{
+    font-weight:bold ;
+   color:blueviolet;
+   font-family:unset;
+   text-align: center;
+   font-size: 18px;
+
+}
+
+.cards{
+display:flex;
+margin: auto;
+gap: 10px;    
+justify-content: center; 
+grid-template-columns: repeat(3, 1fr);             /* vertically aligns icon and text */
+}
+.dashboard-card{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+    width: 150px;
+    height: 70px;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex-direction: column;
+
+}
+.card-number{
+    font-weight: bold;
+    font-size: 15px;
+}
+.total{
+    color: blue;
+}
+.active{
+    color: green;
+}
+.inactive{
+    color: red;
+}
+
+
+/* EMPLOYEE PERFORMANCE REPORT*/
+
+.headings,.head{
+
+    font-size: 18px;
+    font-family:unset;
+    text-align: center;
+    font-weight: bold;
+    color:blueviolet;
+    margin: 20px 0;
+    margin-bottom: 10px;
+}
+.performance
+{
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.card-section{
+display:flex;
+gap: 5px;
+padding: 20px; 
+width: 100%;
+/* margin: auto; */
+border-radius: 10px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+flex-direction: column;
+background-color:white;
+ }
+ .name{
+    width: 70px;
+ } 
+ progress{
+    width:200px;
+    height:14px;
+ }
+ .percent{
+    font-weight: bold;
+ }
+
+
+ /*RECENT ACTIVITIES*/
+ .bottom-sections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     padding: 0 20px;
+    margin-top: 10px;
+    gap:30px;
+ }
+ .head{
+
+    font-size: 18px;
+    font-family:unset;
+    font-weight: bold;
+    color:blueviolet;
+}
+.employee-performance,
+.recent-activities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    min-width: 250px;       
+    flex: 1;                
+    max-width: 400px;
+}
+.footer{
+    background-color:#5f9ea0;
+    color:white;
+    text-align:center;
+    padding: 8px;
+    margin-top:10px;
+    width: 100%;
+}
+.footer p{
+    margin: 5px;
+}
+.footer-container{
+    width: 100%;
+}
+
+
+
+
+/* EMPLOYEE MANAGEMENT*/
+.employee-section{
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+
+}
+.employee-card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+table{
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+}
+ 
+th,td{
+    padding: 12px;
+    text-align: center;
+}
+
+
+
+
+
+/*Employee Skill Assessment*/
+
+.top-heading{
+    font-weight:bold ;
+   color:blueviolet;
+   font-family:unset;
+   text-align: center;
+   font-size: 18px;
+   margin-bottom: 30px;
+
+}
+ .assessment-page .assessment-card {
+    width: 100%;
+    /* border-radius: 12px; */
+}
+
+.assessment-page .card-body ul {
+    padding-left: 30px;
+}
+

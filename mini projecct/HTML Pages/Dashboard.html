@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee CRM Dashboard</title>
+    <link rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+     <header class="header">
+    <h1 class="title"> Employee Dashboard</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg">
+       
+            
+       <!-- HOME PAGE-->
+        <ul class="navbar-nav ms-auto d-flex flex-row">
+        <li class="nav-item me-3">
+         <a class="nav-link" href="home.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home" aria-label="Go to Home Page">
+        <i class="fa-solid fa-house"></i>
+    </a>
+</li>
+
+
+        <!-- EMPLOYEES PAGE-->
+         <li class="nav-item me-3">
+        <a class="nav-link"  href="Employees.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Employees" aria-label="Go to Employees Page">
+            <i class="fa-solid fa-users"></i>  
+        </a>
+</li>
+
+        <!-- ASSESSMENT PAGE--> 
+         <li class="nav-item me-3">
+        <a class="nav-link" href="Assessment.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Assessment" aria-label="Go to Assessment Page">
+            <i class="fa-solid fa-chart-line"></i>
+            
+        </a>
+        </li>
+
+        <!-- PROFILE PAGE-->
+         <li class="nav-item me-3">
+        <a class="nav-link"  href="Profile.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Profile" aria-label="Go to Profile Page">
+            <i class="fa-solid fa-user"></i>
+    
+        </a>
+        </li>
+         </ul>
+       
+    </nav>
+
+   </header>
+
+   <!-- EMPLOYEE SECTION-->
+    <main class="container mt-4">
+        <section class="employee-stats">
+             <h6 class="heading"> Employee Statistics</h6>
+
+ <div class ="cards">
+
+    <!-- TOTAL EMPLOYEES-->
+        <div class="dashboard-card">
+            <p class="card-title">Total Employees:</p>
+            <p class="card-number total" id="totalEmployees"></p>
+        </div>
+ <!-- ACTIVE EMPLOYEES-->
+        <div class="dashboard-card"> 
+        <p class="card-title">Active Employees:</p>
+        <p class="card-number active" id="activeEmployees"></p>
+    </div>
+ <!-- INACTIVE EMPLOYEES-->
+        <div class="dashboard-card"> 
+        <p class="card-title">Inactive Employees:</p>
+        <p class="card-number inactive" id="inactiveEmployees"></p>
+    </div>
+
+</div>
+</section>
+<br>
+<!-- CLIENT ASSIGNMENTS SUMMARY-->
+ <section class="Clients-stats">
+             <h6 class="heading"> Client Assignments</h6>
+
+ <div class ="cards">
+
+    <!-- TOTAL CLIENTS-->
+        <div class="dashboard-card">
+            <p class="card-title">Total Clients:</p>
+            <p class="card-number total" id="totalClients"></p>
+        </div>
+ <!-- ASSIGNED CLIENTS-->
+        <div class="dashboard-card"> 
+        <p class="card-title">Assigned Clients:</p>
+        <p class="card-number active" id="assignedClients"></p>
+    </div>
+ <!-- PENDING CLIENTS-->
+        <div class="dashboard-card"> 
+        <p class="card-title">Pending Clients:</p>
+        <p class="card-number inactive" id="pendingClients"></p>
+    </div>
+    </div>
+ </section>
+
+
+ <!-- EMPLOYEE PERFORMANCE PROGRESS-->
+<div class="bottom-sections">
+   <section class="employee-performance">
+    
+    <h6 class="headings"> Employee Performance</h6>
+
+    <div class="card-section" id="performanceList">
+     
+
+</div>
+</section>
+
+<!-- RECENT ACTIVITIES-->
+
+<section class="recent-activities">
+    
+     <h6 class="head">Recent Activities</h6>
+     
+
+     <div class="card-section">
+<ul id="activityList"></ul>
+</div>
+</section>
+</div>
+
+
+</main>
+<footer class="footer">
+  <div class="footer-container">
+    <p>© 2026 Employee Management System</p>
+    
+  </div>
+</footer>
+<script src="../js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>

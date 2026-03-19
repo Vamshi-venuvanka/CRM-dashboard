@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee CRM Dashboard</title>
+    <link rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+     <header class="header">
+    <h1 class="title"> Profile</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg">
+        <div class="nav-icons">
+            
+       <!-- HOME PAGE-->
+        <ul class="navbar-nav ms-auto d-flex flex-row">
+        <li class="nav-item me-3">
+         <a class="nav-link" href="home.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Home" aria-label="Go to Home Page">
+        <i class="fa-solid fa-house"></i>
+    </a>
+</li>
+
+
+        <!-- EMPLOYEES PAGE-->
+         <li class="nav-item me-3">
+        <a class="nav-link"  href="Dashboard.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dashboard" aria-label="Go to Dashboard Page">
+            <i class="fa-solid fa-gauge"></i>  
+        </a>
+</li>
+
+        <!-- ASSESSMENT PAGE--> 
+         <li class="nav-item me-3">
+        <a class="nav-link" href="Employees.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Employees" aria-label="Go to Employees Page">
+            <i class="fa-solid fa-users"></i>
+            
+        </a>
+        </li>
+
+        <!-- PROFILE PAGE-->
+         <li class="nav-item me-3">
+        <a class="nav-link"  href="Assessment.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Assessment" aria-label="Go to Assessment Page">
+            <i class="fa-solid fa-chart-line"></i>
+    
+        </a>
+        </li>
+         </ul>
+        </div>
+    </nav>
+
+   </header>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Employee Profile</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav class="navbar navbar-dark bg-light navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-dark fw-bold">Employee Details</a>
+            <div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- MAIN -->
+<main class="container my-4">
+
+    <!-- PROFILE CARD -->
+    <section class="card shadow p-4">
+
+        <div class="row">
+
+            <!-- LEFT SIDE -->
+            <div class="col-md-6">
+                <h3 id="empName">Employee Name</h3>
+
+                <p>
+                    <strong>Status:</strong>
+                    <span id="empStatus" class="badge bg-success">Active</span>
+                </p>
+
+                <p><strong>Department:</strong> <span id="empDept">Sales</span></p>
+                <p><strong>Role:</strong> <span id="empRole">Manager</span></p>
+
+                <!-- SMALL CLIENT LIST -->
+                <p><strong>Clients:</strong></p>
+                <ul id="empClientsPreview">
+                    <li>Client A</li>
+                    <li>Client B</li>
+                </ul>
+            </div> 
+
+            <!-- RIGHT SIDE -->
+            <div class="col-md-6 text-center">
+
+                <h4>Performance</h4>
+
+                <!-- PROGRESS BAR -->
+                <div class="progress my-3">
+                    <div id="empProgress"
+                         class="progress-bar bg-success"
+                         style="width: 0%;">
+                        0%
+                    </div>
+                </div>
+
+                <p id="performanceText">Not Attempted</p>
+
+                <!-- TAKE ASSESSMENT BUTTON -->
+                <a href="Assessment.html" class="btn btn-primary">
+                    Take Assessment
+                </a>
+                
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CLIENTS FULL LIST -->
+    <!-- <section class="card shadow p-4 mt-4">
+        <h4>Assigned Clients</h4>
+        <ol id="empClientsList">
+            <li>Client A</li>
+            <li>Client B</li>
+        </ol>
+    </section> -->
+
+    <!-- BACK BUTTON -->
+    <section class="text-center mt-4">
+        <a href="Employees.html" class="btn btn-secondary">
+            Back to Employees
+        </a>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+    <p>© 2026 Employee Management System</p>
+    
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/profile.js"></script>
+
+
+</body>
+</html>
+
